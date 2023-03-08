@@ -18,7 +18,7 @@
   </div>
 
 
-  <div class="row mt-2 mb-2">
+  <div class="row gy-5">
     <% for post in @posts %>
       <div class="col-md-4 col-sm-6">
         <h3><%= post["title"] %></h3>
@@ -30,7 +30,9 @@
     <% end %>
   </div>
 
-  <div class="row mt-2 mb-2">
-    <a href="/places">Back to All Places</a>
+  <div class="row mt-4 mb-4">
+    <div class="col">
+      <a href="/places" class="btn btn-secondary"> Back to All Places</a>
+    </div>
   </div>
 <% end %>
